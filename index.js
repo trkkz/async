@@ -15,7 +15,7 @@ const asyncLimit = (
   }
 
   if (typeof callback !== 'function') {
-    console.warn('callback is not a function')
+    console.warn('callback is not a function!')
   }
 
 
