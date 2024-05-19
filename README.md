@@ -1,6 +1,6 @@
 # Async
 
-## function
+## Usage
 ```javascript
 const urls = [
   'http://placehold.it/1300x1600/E97452/fff',
