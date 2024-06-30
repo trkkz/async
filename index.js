@@ -9,14 +9,8 @@ const asyncLimit = (
   let count = 0
   
   if (limit > arr.length) limit = arr.length
-
-  if (typeof handler !== 'function') {
-    throw new TypeError('handler is not a function')
-  }
-
-  if (typeof callback !== 'function') {
-    console.warn('callback is not a function!')
-  }
+  if (typeof handler !== 'function') throw new TypeError('handler is not a function')
+  if (typeof callback !== 'function') console.warn('callback is not a function!')
 
 
   return new Promise((res, rej) => {
